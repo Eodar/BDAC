@@ -220,6 +220,7 @@ namespace BDAC
 
                 checkAutoClose.Stop();
                 Functions.CloseGame();
+                
 
                 //Schedule shutdown if the option is checked
                 if (nShutdownDC.Checked)
@@ -283,8 +284,12 @@ namespace BDAC
             ConfigManager.Config.ShutDown = nShutdownDC.Checked;
             ConfigManager.SaveConfig();
         }
-
+        private void Alwaysontop_CheckedChanged(object sender)
+        {
+            this.TopMost = Alwaysontop.Checked;
+        }
         #endregion
+
 
     }
 }

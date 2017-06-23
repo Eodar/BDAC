@@ -1,0 +1,7 @@
+C:\Users\Eo-PC\Desktop\BDAC-master\BDAC-master\BDAC\bin\Debug\BD Auto Closer.exe.config
+C:\Users\Eo-PC\Desktop\BDAC-master\BDAC-master\BDAC\bin\Debug\BD Auto Closer.exe
+C:\Users\Eo-PC\Desktop\BDAC-master\BDAC-master\BDAC\obj\Debug\BDAC.csprojResolveAssemblyReference.cache
+C:\Users\Eo-PC\Desktop\BDAC-master\BDAC-master\BDAC\obj\Debug\BDAC.MainFrm.resources
+C:\Users\Eo-PC\Desktop\BDAC-master\BDAC-master\BDAC\obj\Debug\BDAC.Properties.Resources.resources
+C:\Users\Eo-PC\Desktop\BDAC-master\BDAC-master\BDAC\obj\Debug\BDAC.csproj.GenerateResource.Cache
+C:\Users\Eo-PC\Desktop\BDAC-master\BDAC-master\BDAC\obj\Debug\BD Auto Closer.exe

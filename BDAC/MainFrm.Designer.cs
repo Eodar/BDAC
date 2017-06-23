@@ -58,6 +58,7 @@
             this.aboutTabPage = new System.Windows.Forms.TabPage();
             this.iTalk_Label2 = new iTalk.iTalk_Label();
             this.iTalk_Label1 = new iTalk.iTalk_Label();
+            this.Alwaysontop = new iTalk.iTalk_CheckBox();
             this.iTalk_TabControl1.SuspendLayout();
             this.mainTabPage.SuspendLayout();
             this.settingsTabPage.SuspendLayout();
@@ -114,7 +115,7 @@
             this.iTalk_TabControl1.Multiline = true;
             this.iTalk_TabControl1.Name = "iTalk_TabControl1";
             this.iTalk_TabControl1.SelectedIndex = 0;
-            this.iTalk_TabControl1.Size = new System.Drawing.Size(415, 156);
+            this.iTalk_TabControl1.Size = new System.Drawing.Size(415, 167);
             this.iTalk_TabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.iTalk_TabControl1.TabIndex = 0;
             this.iTalk_TabControl1.TabStop = false;
@@ -263,6 +264,7 @@
             // settingsTabPage
             // 
             this.settingsTabPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.settingsTabPage.Controls.Add(this.Alwaysontop);
             this.settingsTabPage.Controls.Add(this.iTalk_Separator3);
             this.settingsTabPage.Controls.Add(this.nSaveLog);
             this.settingsTabPage.Controls.Add(this.nShutdownDC);
@@ -272,7 +274,7 @@
             this.settingsTabPage.Location = new System.Drawing.Point(124, 4);
             this.settingsTabPage.Name = "settingsTabPage";
             this.settingsTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.settingsTabPage.Size = new System.Drawing.Size(287, 148);
+            this.settingsTabPage.Size = new System.Drawing.Size(287, 159);
             this.settingsTabPage.TabIndex = 2;
             this.settingsTabPage.Text = "Settings";
             // 
@@ -304,7 +306,7 @@
             this.nShutdownDC.Checked = false;
             this.nShutdownDC.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.nShutdownDC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.nShutdownDC.Location = new System.Drawing.Point(5, 92);
+            this.nShutdownDC.Location = new System.Drawing.Point(5, 87);
             this.nShutdownDC.Name = "nShutdownDC";
             this.nShutdownDC.Size = new System.Drawing.Size(276, 15);
             this.nShutdownDC.TabIndex = 11;
@@ -363,7 +365,9 @@
             this.iTalk_Label2.Name = "iTalk_Label2";
             this.iTalk_Label2.Size = new System.Drawing.Size(281, 122);
             this.iTalk_Label2.TabIndex = 1;
-            this.iTalk_Label2.Text = resources.GetString("iTalk_Label2.Text");
+            this.iTalk_Label2.Text = "Original Author:\niPollox (IGN: Kamaly, Region: NA)\n\nContributors:\nShadowtrance (I" +
+    "GN: Reishka, Region: NA)\nZero (IGN: Zero, Region NA)\n\nThis project is Open Sourc" +
+    "e.\nhttps://github.com/iPollox/BDAC";
             // 
             // iTalk_Label1
             // 
@@ -378,11 +382,23 @@
             this.iTalk_Label1.Text = "Credits";
             this.iTalk_Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // Alwaysontop
+            // 
+            this.Alwaysontop.BackColor = System.Drawing.Color.Transparent;
+            this.Alwaysontop.Checked = false;
+            this.Alwaysontop.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Alwaysontop.Location = new System.Drawing.Point(6, 108);
+            this.Alwaysontop.Name = "Alwaysontop";
+            this.Alwaysontop.Size = new System.Drawing.Size(273, 15);
+            this.Alwaysontop.TabIndex = 15;
+            this.Alwaysontop.Text = "Always On Top ";
+            this.Alwaysontop.CheckedChanged += new iTalk.iTalk_CheckBox.CheckedChangedEventHandler(this.Alwaysontop_CheckedChanged);
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 156);
+            this.ClientSize = new System.Drawing.Size(415, 167);
             this.Controls.Add(this.iTalk_TabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -432,6 +448,7 @@
         public iTalk.iTalk_Label statusTimelabel;
         private iTalk.iTalk_Label iTalk_Label2;
         private iTalk.iTalk_Label iTalk_Label1;
+        private iTalk.iTalk_CheckBox Alwaysontop;
     }
 }
 
